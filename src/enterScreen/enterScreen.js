@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import {StyleSheet, Text, View, TextInput, FlatList, Picker, ScrollView, TouchableHighlight} from 'react-native';
+import {StyleSheet, Text, View, TextInput, FlatList, Picker, ScrollView, TouchableOpacity} from 'react-native';
 import {Image as ReactImage} from 'react-native';
 
 import Svg, {Defs, Pattern} from 'react-native-svg';
@@ -73,9 +73,10 @@ export default function EnterScreen () {
             <Text style={styles.enterScreen_title_anApplicationForCollegeStudentsAlikeToRelaxAndJustVibe}>An application for college students alike to relax and just vibe.</Text>
             <Text style={styles.enterScreen_title_welcomeToFragment}>Fragment</Text>
         </View>
-        <Text style={styles.enterScreen_learnMore}>Learn More</Text>
         <View style={styles.enterScreen_logo}>
+        <TouchableOpacity>
             <ReactImage source={require('./assets/peace.png')} style={styles.enterScreen_logo_peace} />
+        </TouchableOpacity>
         </View>
     </ScrollView>
     );
