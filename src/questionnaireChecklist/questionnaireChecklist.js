@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 import PropTypes from "prop-types";
 
-import {StyleSheet, Text, View, TextInput, FlatList, Picker, ScrollView, TouchableHighlight} from 'react-native';
+import {StyleSheet, Text, View, TextInput, FlatList, Picker, ScrollView, TouchableOpacity} from 'react-native';
 import {Image as ReactImage} from 'react-native';
 
 import Svg, {Defs, Pattern} from 'react-native-svg';
@@ -16,44 +16,41 @@ export default class QuestionnaireChecklist extends Component {
   render() {
     
     return (
-    <ScrollView data-layer="32615191-f528-4811-aea1-0c36a45b0a44" style={styles.questionnaireChecklist}>
-        <View data-layer="ca1bf44e-a303-4a26-bca9-48288d5c9288" style={styles.questionnaireChecklist_login}>
-            <View data-layer="74af4c4e-c97d-46d2-9cd3-d8fb054f38cd" style={styles.questionnaireChecklist_login_rectangle133}></View>
-            <Text data-layer="e6f9d9e6-abd5-4665-8b88-61ba01a00b91" style={styles.questionnaireChecklist_login_continue}>CONTINUE</Text>
-            <View data-layer="b2b90ece-debf-41b9-b5ab-3a53d4bc6279" style={styles.questionnaireChecklist_login_group2}>
-                <View data-layer="6a0f6c32-2b1d-44b0-a782-1a2414d4f9dc" style={styles.questionnaireChecklist_login_group2_rectangle1458}></View>
+    <ScrollView style={styles.questionnaireChecklist}>
+
+
+        <Text style={styles.questionnaireChecklist_pleaseAnswerTheQuestionFromEachOfTheCategories}>To begin your journey, please answer questions from each of the following categories of stress..</Text>
+       
+        <TouchableOpacity style={styles.questionnaireChecklist_academicsButton}>
+            <View style={styles.questionnaireChecklist_academicsButton_rectangle13268879b21}></View>
+            <Text style={styles.questionnaireChecklist_academicsButton_academics}>ACADEMICS</Text>
+            <View  style={styles.questionnaireChecklist_academicsButton_group4ef0cd32e}>
             </View>
-        </View>
-        <View data-layer="2223db83-ee4d-48a1-a847-bb4489b89dc9" style={styles.questionnaireChecklist_academicsButton}>
-            <View data-layer="7959f1b6-d4af-42b8-b8d2-e23958e39903" style={styles.questionnaireChecklist_academicsButton_rectangle13268879b21}></View>
-            <Text data-layer="01c9a72b-2e05-40b1-b33a-81e78d8d6e6c" style={styles.questionnaireChecklist_academicsButton_academics}>ACADEMICS</Text>
-            <View data-layer="2e740909-e624-4c28-9874-9aec65d79630" style={styles.questionnaireChecklist_academicsButton_group4ef0cd32e}>
+        </TouchableOpacity>
+
+        <View style={styles.questionnaireChecklist_dividerc2297785}></View>
+
+        <TouchableOpacity style={styles.questionnaireChecklist_workButton}>
+            <View style={styles.questionnaireChecklist_workButton_rectangle132bbf54e33}></View>
+            <Text style={styles.questionnaireChecklist_workButton_work}>WORK</Text>
+            <View style={styles.questionnaireChecklist_workButton_group40b68e599}>
             </View>
-        </View>
-        <View data-layer="8fa355b1-4050-4c7f-982d-0c5c4fc38592" style={styles.questionnaireChecklist_dividerc2297785}></View>
-        <View data-layer="e0a3d08d-246e-43ce-bdd0-ad77223d3b74" style={styles.questionnaireChecklist_workButton}>
-            <View data-layer="dc2c2ae9-dcde-4ec9-9d0b-de1e26547ae2" style={styles.questionnaireChecklist_workButton_rectangle132bbf54e33}></View>
-            <Text data-layer="32374a58-220c-41fc-b469-cd0a005fc223" style={styles.questionnaireChecklist_workButton_work}>WORK</Text>
-            <View data-layer="5d0a2182-2756-4e61-9922-3bd3570a28e3" style={styles.questionnaireChecklist_workButton_group40b68e599}>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.questionnaireChecklist_financialButton}>
+            <View style={styles.questionnaireChecklist_financialButton_rectangle132}></View>
+            <Text style={styles.questionnaireChecklist_financialButton_financial}>FINANCIAL</Text>
+            <View style={styles.questionnaireChecklist_financialButton_group4}>
             </View>
-        </View>
-        <View data-layer="65db06a8-1de8-4872-a66b-46cfc0404b29" style={styles.questionnaireChecklist_financialButton}>
-            <View data-layer="a2dd2d4d-5500-46e7-b3e4-2f3a52e75801" style={styles.questionnaireChecklist_financialButton_rectangle132}></View>
-            <Text data-layer="e56e5278-a2b4-4354-95fa-d06f017875bd" style={styles.questionnaireChecklist_financialButton_financial}>FINANCIAL</Text>
-            <View data-layer="714362ee-7910-4f58-9fec-9c29fbc3083b" style={styles.questionnaireChecklist_financialButton_group4}>
+        </TouchableOpacity>
+
+          <TouchableOpacity style={styles.questionnaireChecklist_login}>
+            <View style={styles.questionnaireChecklist_login_rectangle133}></View>
+            <Text style={styles.questionnaireChecklist_login_continue}>CONTINUE</Text>
+            <View style={styles.questionnaireChecklist_login_group2}>
+                <View style={styles.questionnaireChecklist_login_group2_rectangle1458}></View>
             </View>
-            <Text data-layer="a7aaf38c-364a-4f70-8b6c-e59aa210c336" style={styles.questionnaireChecklist_financialButton_financialButton73d1cb518f23}></Text>
-        </View>
-        <Text data-layer="27d238d3-f687-4972-8b37-a3981613a6b9" style={styles.questionnaireChecklist_pleaseAnswerTheQuestionFromEachOfTheCategories}>To begin your journey, please answer questions from each of the following categories of stress..</Text>
-        <View data-layer="6b367bf3-9347-4156-b269-ea66b47e0adf" style={styles.questionnaireChecklist_yes4518a64b}>
-            <View data-layer="52a75a01-4a46-44a6-a6ae-de1bbc11bb88" style={styles.questionnaireChecklist_yes4518a64b_rectangle55683286b7c}></View>
-        </View>
-        <View style={styles.questionnaireChecklist_yes6c6686df}>
-            <View style={styles.questionnaireChecklist_yes6c6686df_rectangle556c037c23f}></View>
-        </View>
-        <View style={styles.questionnaireChecklist_yes}>
-            <View style={styles.questionnaireChecklist_yes_rectangle556}></View>
-        </View>
+        </TouchableOpacity>
     </ScrollView>
     );
   }
