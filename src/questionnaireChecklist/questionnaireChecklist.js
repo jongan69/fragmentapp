@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 
 import PropTypes from "prop-types";
 
@@ -10,7 +10,9 @@ import {Path as SvgPath} from 'react-native-svg';
 import {Text as SvgText} from 'react-native-svg';
 import {Image as SvgImage} from 'react-native-svg';
 
-export default class QuestionnaireChecklist extends Component {
+import QuestionnaireRate from '../questionnairerate/questionnairerate';
+
+export default class QuestionnaireChecklist extends PureComponent {
 
 
   render() {
@@ -21,7 +23,7 @@ export default class QuestionnaireChecklist extends Component {
 
         <Text style={styles.questionnaireChecklist_pleaseAnswerTheQuestionFromEachOfTheCategories}>To begin your journey, please answer questions from each of the following categories of stress..</Text>
        
-        <TouchableOpacity style={styles.questionnaireChecklist_academicsButton}>
+        <TouchableOpacity style={styles.questionnaireChecklist_academicsButton} >
             <View style={styles.questionnaireChecklist_academicsButton_rectangle13268879b21}></View>
             <Text style={styles.questionnaireChecklist_academicsButton_academics}>ACADEMICS</Text>
             <View  style={styles.questionnaireChecklist_academicsButton_group4ef0cd32e}>
@@ -30,27 +32,20 @@ export default class QuestionnaireChecklist extends Component {
 
         <View style={styles.questionnaireChecklist_dividerc2297785}></View>
 
-        <TouchableOpacity style={styles.questionnaireChecklist_workButton}>
+        <TouchableOpacity style={styles.questionnaireChecklist_workButton} onPress={QuestionnaireRate}>
             <View style={styles.questionnaireChecklist_workButton_rectangle132bbf54e33}></View>
             <Text style={styles.questionnaireChecklist_workButton_work}>WORK</Text>
             <View style={styles.questionnaireChecklist_workButton_group40b68e599}>
             </View>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.questionnaireChecklist_financialButton}>
+        <TouchableOpacity style={styles.questionnaireChecklist_financialButton} >
             <View style={styles.questionnaireChecklist_financialButton_rectangle132}></View>
             <Text style={styles.questionnaireChecklist_financialButton_financial}>FINANCIAL</Text>
             <View style={styles.questionnaireChecklist_financialButton_group4}>
             </View>
         </TouchableOpacity>
 
-          <TouchableOpacity style={styles.questionnaireChecklist_login}>
-            <View style={styles.questionnaireChecklist_login_rectangle133}></View>
-            <Text style={styles.questionnaireChecklist_login_continue}>CONTINUE</Text>
-            <View style={styles.questionnaireChecklist_login_group2}>
-                <View style={styles.questionnaireChecklist_login_group2_rectangle1458}></View>
-            </View>
-        </TouchableOpacity>
     </ScrollView>
     );
   }
