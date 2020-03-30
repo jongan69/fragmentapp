@@ -5,6 +5,7 @@ import * as React from 'react';
 import TabBarIcon from '../components/TabBarIcon';
 import EnterScreen from '../src/enterScreen/enterScreen';
 import QuestionnaireChecklist from '../src/questionnaireChecklist/questionnaireChecklist';
+import SignIn from '../src/signIn/signIn';
 
 const BottomTab = createBottomTabNavigator();
 const INITIAL_ROUTE_NAME = 'Home';
@@ -33,6 +34,14 @@ export default function BottomTabNavigator({ navigation, route }) {
           tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-text" />,
         }}
       />
+      <BottomTab.Screen
+        name="Signin"
+        component={SignIn}
+        options={{
+          title: 'SignIn',
+          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-text" />,
+        }}
+      />
     </BottomTab.Navigator>
   );
 }
@@ -45,5 +54,7 @@ function getHeaderTitle(route) {
       return 'Welcome';
     case 'Links':
       return 'Choose your casue of stress';
+    case 'Signin':
+      return 'Please Sign in';
   }
 }

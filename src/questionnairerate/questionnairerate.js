@@ -17,6 +17,7 @@ export default class QuestionnaireRate extends Component {
             <Text data-layer="b5404fcc-d117-47a4-8a5f-b2f68561cd1f" style={styles.questionnaireWork1_header_work}>Work</Text>
         </View>
         <Text data-layer="d90ff635-fa01-4d07-a1eb-9782d815e682" style={styles.questionnaireWork1_howBusyIsYourWorkSchedule}>How busy is your work schedule?</Text>
+
         <View data-layer="648fc6ad-7b4e-4e6e-9f8f-0ae5ecfd5765" style={styles.questionnaireWork1_continue34148045}>
             <View data-layer="e304000a-b159-43c4-9866-d7bb25ff2a19" style={styles.questionnaireWork1_continue34148045_rectangle132b4e471dd}></View>
             <Text data-layer="3d838d5b-9a46-45e8-85ee-11bd9c080975" style={styles.questionnaireWork1_continue34148045_x2}>2</Text>
@@ -33,6 +34,7 @@ export default class QuestionnaireRate extends Component {
             <View data-layer="65b5d56b-9702-4fb5-90aa-4be7d811f85f" style={styles.questionnaireWork1_continue_rectangle132}></View>
             <Text data-layer="100cdf10-03a9-43d8-af08-602b20e56a6d" style={styles.questionnaireWork1_continue_x5}>5</Text>
         </View>
+        
     </ScrollView>
     );
   }
