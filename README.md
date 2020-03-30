@@ -1,5 +1,9 @@
 # fragmentapp
+
+![Fragment logo](https://github.com/jongan69/fragmentapp/blob/master/assets/images/splash.png)
+
 A Expo React Native Mobile application for helping college students manage their stress by implementing an atomic habit approach
+
 
 
 
