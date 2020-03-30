@@ -1,4 +1,4 @@
-# fragmentapp
+# A mobile application to help college students manage stress
 
 ![Fragment logo](https://github.com/jongan69/fragmentapp/blob/master/assets/images/splash.png)
 
