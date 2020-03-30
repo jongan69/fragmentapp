@@ -2,17 +2,17 @@
 
 ![Fragment logo](https://github.com/jongan69/fragmentapp/blob/master/assets/images/splash.png)
 
-A Expo React Native Mobile application for helping college students manage their stress by implementing an atomic habit approach
+A Expo React Native Mobile application for helping college students manage their stress by implementing an atomic habit approach.
 
 
 
 
-#Testing
+
 This app is built using Expo React Native CLI in combination with Firebase to manage the backend of the application.
 
-To get started you will need Nodejs, yarnm, and Expo CLI
+To get started you will need Nodejs, yarn, and Expo CLI.
 
-Then Git clone the repository, run 
+Then, Git clone this repository and run 
 ```
 yarn 
 ```
