@@ -7,7 +7,7 @@ A Expo React Native Mobile application for helping college students manage their
 
 
 
-#Testing
+
 This app is built using Expo React Native CLI in combination with Firebase to manage the backend of the application.
 
 To get started you will need Nodejs, yarnm, and Expo CLI
