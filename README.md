@@ -6,5 +6,9 @@ This app is built using Expo React Native CLI in combination with Firebase to ma
 
 To get started you will need Nodejs, yarnm, and Expo CLI
 
-Then Git clone the repository, run yarn to install dependencies
-and then yarn start to create the development server in expo.
+Then Git clone the repository, run 
+yarn 
+// to install dependencies
+and then 
+yarn start 
+// to create the development server in expo.
